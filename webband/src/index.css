@@ -1,0 +1,56 @@
+body {
+  background-color: #0e0e14; /* almost black with a hint of blue */
+  color: #d0d8e0; /* soft, cold grey-blue text */
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+h1, h2 {
+  color: #a8c7ff; /* icy blue headings */
+}
+
+button {
+  background: linear-gradient(145deg, #1c1f2b, #11131a);
+  color: #d0d8e0;
+  border: 1px solid #2a2f3d;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #222634, #161922);
+  border-color: #3b4b63;
+  box-shadow: 0 0 6px rgba(168, 199, 255, 0.3);
+}
+
+.grid {
+  background-color: #1b1f29;
+  border: 1px solid #2a2f3d;
+}
+
+.cell {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #2a2f3d;
+  background-color: #12141c;
+  transition: background-color 0.15s ease;
+}
+
+.cell.active {
+  background-color: #4b79ff; /* cold blue active step */
+}
+
+.cell:hover {
+  background-color: #2a3145;
+}
+
+.playhead {
+  background-color: rgba(168, 199, 255, 0.25);
+}
+
+.loop-area {
+  background-color: rgba(74, 143, 255, 0.15);
+  border: 1px solid rgba(74, 143, 255, 0.4);
+}
