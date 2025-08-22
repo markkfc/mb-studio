@@ -1,8 +1,19 @@
 import React, { useState } from "react";
-import Login from "./Login";
+import LoginPage from "./LoginPage";
 import DAW from "./DAW";
 
-export default function App() {
+function App() {
   const [loggedIn, setLoggedIn] = useState(false);
-  return loggedIn ? <DAW /> : <Login onLogin={() => setLoggedIn(true)} />;
+
+  return (
+    <div>
+      {!loggedIn ? (
+        <LoginPage onLogin={() => setLoggedIn(true)} />
+      ) : (
+        <DAW />
+      )}
+    </div>
+  );
 }
+
+export default App;
